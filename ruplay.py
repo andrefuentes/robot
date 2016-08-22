@@ -3,4 +3,7 @@ def mapas():
 	m=open("mapa_1.txt")
 	for linea in m:
 		lista.append(list(linea.strip()))
-	print(lista)
+	return (lista)
+	m = mapas("mapas/mapa_1.txt")
+	
+
