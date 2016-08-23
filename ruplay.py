@@ -1,9 +1,8 @@
-def mapas():
+def cargar_mapa(mapa):
 	lista=[]
-	m=open("mapa_1.txt")
+	m=open(mapa/"mapa_1.txt")
 	for linea in m:
 		lista.append(list(linea.strip()))
-	return (lista)
-	m = mapas("mapas/mapa_1.txt")
-	
+	return(lista)
+
 
