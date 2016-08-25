@@ -11,7 +11,6 @@ class Robot():
 			self.x=1
 		if self.direccion==0 and self.y>25:
 			self.y=1
-			
 	def pick(self):
 		for x in len(mapa.lista):
 			self.fichas=fichas+1
