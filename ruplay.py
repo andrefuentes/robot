@@ -5,4 +5,3 @@ def cargar_mapa(mapa):
 		linea=list(linea.strip())
 		linea=lista.append(linea)
 	return(lista)
-
