@@ -8,6 +8,6 @@ class Mapa(object):
 	def asignar_robot(self,robot):
 		self.robot=robot
 	def agregar_monedas(self,monedas):
-		self.monedas.append()
+		self.monedas.append(monedas)
 		return monedas
 		

@@ -17,7 +17,7 @@ class Robot(object):
 			self.y-=1
 		else:
 			self.x+=1
-	def representacion_robot(self):
+	def dibujar(self):
 		if self.direccion="UP":
 			return "^"
 		elif self.direccion="left":
