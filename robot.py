@@ -9,25 +9,35 @@ class Robot(object):
 	def colocar_en_mapa(self,mapa):
 		self.mapa=mapa
 	def mover(self):
-		if self.direccion==0 and self.x<80:
-			self.x+=1
-		if self.direccion==80 and self.y<25:
-			self.y+=1
-		if self.direccion==80 and self.y<25:
-			self.x-=1
-		if self.direccion==0 and self.x<80:
+		if self.direccion=="UP":
 			self.y-=1
-	def rotar(self):
-		if self.direccion="UPSS":
+		if self.direccion=="right":
+			self.x+=1
+		if self.direccion=="down":
+			self.y-=1
+		else:
+			self.x+=1
+	def representacion_robot(self):
+		if self.direccion="UP":
 			return "^"
-		elif self.direccion=">":
+		elif self.direccion="left":
 			return ">"
-		elif self.direccion="<":
+		elif self.direccion="right":
 			return "<"                                
-		elif self.direccion="v":
+		elif self.direccion="down":
 			return "v"
+	def rotar (self):
+		if self.direccion=="UP":
+			self.direccion=="right":
+		if self.direccion="right":
+			self.direccion=="left"
+		if self.direccion=="left":
+			self.direccion="down"
+		if self.direccion=="down"
+			self.direccion="UP"
 	def pick(self):
-		for x in len(mapa.lista):
+		for i in range(mapa.lista):
+		for j in range(mapa.lista):
 		
 		return monedas
 
