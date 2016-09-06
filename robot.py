@@ -38,7 +38,3 @@ class Robot(object):
 	def pick(self):
 		for i in range(mapa.lista):
 		for j in range(mapa.lista):
-		
-		return monedas
-
-^
