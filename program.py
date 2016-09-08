@@ -27,4 +27,14 @@ def cargar_instruciones(nombre_archivo):
 		for i in range(steps)
 		time.sleep(0.3)
 		print (imprimir_robot(5+i,i))
+		
+		def cargar_mapa(mapa):
+	lista=[]
+	m=open("mapa_1.txt")
+	for linea in m:
+		linea=list(linea.strip())
+		linea=lista.append(linea)
+	return(lista)
+	m=input()
+	print(ruplay.cargar_mapa(m))
 
