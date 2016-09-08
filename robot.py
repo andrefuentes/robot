@@ -36,5 +36,3 @@ class Robot(object):
 		if self.direccion=="down"
 			self.direccion="UP"
 	def pick(self):
-		for i in range(mapa.lista):
-		for j in range(mapa.lista):
