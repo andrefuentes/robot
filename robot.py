@@ -39,3 +39,4 @@ class Robot(object):
         if self.mapa.contar_monedas_en(self.x, self.y) > 0:
             self.monedas += 1
             self.mapa.remover_moneda_en(x, y)
+            

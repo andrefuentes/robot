@@ -10,6 +10,9 @@ class Mapa(object):
 		self.monedas.append(moneda)
 	def contar_moneda(self,x,y):
 		contador=0
+		for monedas in self.monedas:
+			if moneda.x==x and moneda.y==y:
+				contador+=1
 	def dibujar(self,x,y):
         resultado = "  "
         for y in range(self.altura):
@@ -33,12 +36,7 @@ class Mapa(object):
 					break
 					if remover>=0:
 						self.moneda.pop(remover)		
-	def contar_monedas(self,x,y):
-		contador=0
-		for monedas in self.monedas:
-			if moneda.x==x and moneda.y==y:
-				contador+=1
-
+		
 
 
 
