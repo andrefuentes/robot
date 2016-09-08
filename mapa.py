@@ -10,15 +10,14 @@ class Mapa(object):
 		self.monedas.append(moneda)
 	def contar_moneda(self,x,y):
 		contador=0
-	def dibujar (self,x,y):
-		def dibujar(self):
-        resultado = ""
+	def dibujar(self,x,y):
+        resultado = "  "
         for y in range(self.altura):
             for x in range(self.ancho):
                 if x == self.robot.x and y == self.robot.y:
                     resultado += self.robot.dibujar()
 
-                elif self.contar_monedas_en(x, y) > 0:
+                elif self.contar_monedas_en(x, y):
                     resultado += self.contar_monedas_en(x, y)
                 else:
                     resultado += " "
@@ -31,15 +30,14 @@ class Mapa(object):
 			for remover in range(len(self.monedas)):
 				if moneda.x=x and moneda.y=y
 					moneda=self.monedas[remover]
-					self.moneda.pop(moneda)
-					break		
+					break
+					if remover>=0:
+						self.moneda.pop(remover)		
 	def contar_monedas(self,x,y):
 		contador=0
 		for monedas in self.monedas:
 			if moneda.x==x and moneda.y==y:
 				contador+=1
-		return contador
-	def 
 
 
 
